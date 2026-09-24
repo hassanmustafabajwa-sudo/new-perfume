@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NOCTURNE — scents for the unseen. An independent fragrance house.">
+<title>NOCTURNE — Scents for the Unseen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#090909;--ivory:#ece9e1;--muted:#aaa69e;--line:rgba(236,233,225,.18);--sans:"Manrope",sans-serif;--serif:"Playfair Display",serif;--mono:"DM Mono",monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--sans);font-weight:300;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}.grain{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")} .cursor{position:fixed;width:12px;height:12px;border:1px solid var(--ivory);border-radius:50%;pointer-events:none;z-index:100;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:width .25s,height .25s}.cursor.big{width:72px;height:72px}
+header{position:fixed;top:0;left:0;width:100%;z-index:40;padding:24px 4vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;mix-blend-mode:difference}header .brand{font-size:13px;letter-spacing:.26em;font-weight:500}nav{display:flex;gap:30px;font:10px var(--mono);letter-spacing:.12em}nav a{opacity:.75;transition:opacity .2s}nav a:hover{opacity:1}header .bag{text-align:right;font:10px var(--mono);letter-spacing:.12em}
+.hero{height:100svh;min-height:700px;position:relative;display:grid;place-items:center;overflow:hidden;background:#111}.hero-bg{position:absolute;inset:-8%;background:url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=2200&q=90") center/cover;filter:brightness(.48) contrast(1.08);transform:scale(1.08);will-change:transform}.hero-bg:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,transparent 0,rgba(0,0,0,.3) 45%,rgba(0,0,0,.82) 100%)}.hero-content{position:relative;z-index:2;text-align:center;width:min(1100px,90vw)}.eyebrow{font:10px var(--mono);letter-spacing:.32em;text-transform:uppercase;color:#d3d0c8;margin-bottom:28px}.hero h1{font:400 clamp(70px,13vw,190px)/.82 var(--serif);letter-spacing:-.065em;margin:0;text-transform:uppercase}.hero h1 em{font-style:italic;text-transform:none}.hero-copy{max-width:390px;margin:38px auto 0;color:#d0cdc6;font-size:13px;line-height:1.8}.hero-actions{margin-top:34px;display:flex;justify-content:center;gap:14px}.pill{border:1px solid rgba(236,233,225,.5);padding:14px 21px;font:10px var(--mono);letter-spacing:.13em;text-transform:uppercase;transition:background .3s,color .3s}.pill:hover{background:var(--ivory);color:var(--ink)}.scroll{position:absolute;bottom:30px;left:4vw;font:9px var(--mono);letter-spacing:.2em;writing-mode:vertical-rl;display:flex;gap:12px;align-items:center}.scroll:after{content:"";width:1px;height:60px;background:var(--ivory);opacity:.5}
+.intro{padding:18vw 8vw 15vw;background:var(--ivory);color:var(--ink);position:relative}.intro .kicker{font:10px var(--mono);letter-spacing:.2em;margin-bottom:11vw}.intro h2{font:400 clamp(45px,7vw,105px)/.92 var(--serif);letter-spacing:-.045em;max-width:1100px;margin:0}.intro h2 em{font-style:italic}.intro .small{font-size:12px;line-height:1.8;max-width:260px;margin:7vw 0 0 auto}.line{height:1px;background:currentColor;opacity:.2}
+.collection{padding:12vw 4vw;background:#0b0b0b}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:7vw}.section-title{font:400 clamp(44px,7vw,94px)/.9 var(--serif);letter-spacing:-.05em}.mono{font:9px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.products{display:grid;gap:0}.product{min-height:80vh;display:grid;grid-template-columns:45% 55%;border-top:1px solid var(--line);position:relative}.product:nth-child(even){grid-template-columns:55% 45%}.product:nth-child(even) .product-image{order:2}.product-image{position:relative;overflow:hidden;min-height:650px}.product-image img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.7) contrast(1.04);transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s}.product:hover img{transform:scale(1.055);filter:saturate(.85) contrast(1.06)}.product-info{padding:6vw 5vw;display:flex;flex-direction:column;justify-content:space-between}.number{font:11px var(--mono);color:var(--muted)}.product-name{font:400 clamp(42px,6vw,88px)/.9 var(--serif);letter-spacing:-.05em;margin:18px 0}.product-name em{font-style:italic}.notes{display:flex;gap:14px;flex-wrap:wrap;font:9px var(--mono);letter-spacing:.12em;color:#b9b5ad;text-transform:uppercase}.product-bottom{display:flex;justify-content:space-between;align-items:end}.price{font:11px var(--mono);letter-spacing:.1em}.discover{font:10px var(--mono);letter-spacing:.14em;border-bottom:1px solid #777;padding-bottom:5px}.product:nth-child(2) .product-image{background:#322e2a}.product:nth-child(3) .product-image{background:#25251f}
+.scent{padding:15vw 4vw 16vw;background:#141412;overflow:hidden}.scent-top{display:flex;justify-content:space-between;align-items:start}.scent h2{font:400 clamp(50px,9vw,130px)/.85 var(--serif);letter-spacing:-.06em;max-width:900px;margin:0}.scent h2 em{font-style:italic}.scent-map{min-height:650px;margin-top:8vw;position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}.orbit{width:min(540px,75vw);height:min(540px,75vw);border:1px solid rgba(236,233,225,.16);border-radius:50%;position:relative;animation:spin 35s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(236,233,225,.1);border-radius:50%;inset:14%}.orbit:after{inset:29%}.scent-word{position:absolute;font:10px var(--mono);letter-spacing:.16em;cursor:pointer;transition:transform .4s,color .4s}.scent-word:hover{transform:scale(1.3);color:#fff}.w1{top:7%;left:46%}.w2{right:3%;top:47%}.w3{bottom:9%;left:42%}.w4{left:1%;top:47%}.w5{top:26%;left:14%}.w6{right:13%;bottom:25%}.scent-center{position:absolute;text-align:center}.scent-center span{font:9px var(--mono);letter-spacing:.2em;color:var(--muted)}.scent-center strong{display:block;font:italic 32px var(--serif);margin-top:7px}
+.cinema{height:100svh;min-height:650px;position:relative;overflow:hidden;display:grid;place-items:center}.cinema img{position:absolute;inset:-5%;width:110%;height:110%;object-fit:cover;filter:brightness(.48);will-change:transform}.cinema:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.45))}.cinema-copy{position:relative;z-index:2;text-align:center}.cinema-copy span{font:9px var(--mono);letter-spacing:.25em}.cinema-copy h2{font:400 clamp(65px,12vw,170px)/.8 var(--serif);letter-spacing:-.06em;margin:25px 0}.cinema-copy h2 em{font-style:italic}
+.house{background:var(--ivory);color:var(--ink);padding:15vw 8vw}.house-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:8vw;align-items:end}.house h2{font:400 clamp(58px,9vw,140px)/.82 var(--serif);letter-spacing:-.06em;margin:0}.house h2 em{font-style:italic}.house-copy{font-size:13px;line-height:1.9;max-width:330px}.facts{margin-top:12vw;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #aaa;padding-top:20px;gap:30px}.fact b{display:block;font:400 54px var(--serif);margin-bottom:10px}.fact span{font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.ingredients{padding:12vw 4vw;background:#0b0b0b;min-height:90vh}.ingredient-list{margin-top:8vw}.ingredient{font:400 clamp(46px,8vw,125px)/.9 var(--serif);letter-spacing:-.055em;border-top:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;align-items:center;transition:padding .4s}.ingredient:last-child{border-bottom:1px solid var(--line)}.ingredient:hover{padding-left:3vw;padding-right:3vw}.ingredient small{font:9px var(--mono);letter-spacing:.14em;color:var(--muted)}
+.journal{padding:14vw 4vw;background:#e7e4dc;color:#0a0a0a}.journal-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;margin-top:8vw}.journal-main img{width:100%;height:65vh;object-fit:cover;filter:saturate(.7)}.journal-main h3,.journal-item h3{font:400 35px var(--serif);letter-spacing:-.03em;margin:20px 0 5px}.journal-main p,.journal-item p{font-size:11px;line-height:1.7;color:#65615a;max-width:420px}.journal-side{display:flex;flex-direction:column;gap:5vw}.journal-item{border-top:1px solid #aaa;padding-top:20px}.journal-item img{width:100%;height:190px;object-fit:cover;filter:saturate(.55)}
+.final{min-height:90vh;padding:14vw 4vw 5vw;display:flex;flex-direction:column;justify-content:space-between;background:#0a0a0a}.final h2{font:400 clamp(70px,14vw,210px)/.77 var(--serif);letter-spacing:-.065em;margin:0;max-width:1200px}.final h2 em{font-style:italic}.final-row{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:25px;margin-top:15vw}.footer-brand{font:12px var(--mono);letter-spacing:.2em}.footer-links{display:flex;gap:35px;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}.copyright{font:9px var(--mono);color:var(--muted)}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}
+@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:800px){header{padding:19px 5vw;grid-template-columns:1fr auto}nav{display:none}.hero{min-height:650px}.hero h1{font-size:21vw}.hero-copy{font-size:12px;max-width:300px}.intro{padding:28vw 7vw 22vw}.intro h2{font-size:14vw}.intro .small{margin-top:15vw}.section-head{display:block}.section-head .mono{margin-top:20px}.collection{padding:22vw 5vw}.product,.product:nth-child(even){display:block;min-height:auto}.product:nth-child(even) .product-image{order:initial}.product-image{height:72vh;min-height:500px}.product-info{min-height:55vh;padding:12vw 4vw}.product-name{font-size:16vw}.scent{padding:24vw 5vw}.scent-map{min-height:480px}.cinema{min-height:620px}.house{padding:24vw 7vw}.house-grid{grid-template-columns:1fr;gap:18vw}.house h2{font-size:17vw}.facts{grid-template-columns:1fr 1fr;gap:45px 20px;margin-top:18vw}.fact b{font-size:43px}.ingredients{padding:22vw 5vw}.ingredient{font-size:12vw}.journal{padding:22vw 5vw}.journal-grid{grid-template-columns:1fr}.journal-main img{height:55vh}.final{min-height:80vh;padding:24vw 5vw 8vw}.final h2{font-size:19vw}.final-row{display:block;margin-top:25vw}.footer-links{flex-wrap:wrap;margin:30px 0}.cursor{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.orbit{animation:none}.hero-bg,.cinema img{transform:none!important}}
+</style>
+</head>
+<body>
+<div class="grain"></div><div class="cursor" id="cursor"></div>
+<header id="header"><a class="brand" href="#">NOCTURNE</a><nav><a href="#collection">COLLECTION</a><a href="#house">THE HOUSE</a><a href="#journal">JOURNAL</a></nav><div class="bag">BAG (0)</div></header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content reveal">
+    <div class="eyebrow">Independent Fragrance House · Est. 2018</div>
+    <h1>Scents<br>for the <em>unseen.</em></h1>
+    <p class="hero-copy">Independent fragrance compositions created for the hours between midnight and morning.</p>
+    <div class="hero-actions"><a class="pill" href="#collection">Discover the collection</a></div>
+  </div>
+  <div class="scroll">SCROLL TO ENTER</div>
+</section>
+
+<section class="intro">
+  <div class="kicker reveal">01 — THE IDEA</div>
+  <h2 class="reveal">Architecture is not simply what we build. <em>It is what remains</em> when everything unnecessary disappears.</h2>
+  <p class="small reveal">NOCTURNE explores fragrance through contrast — shadow and light, warmth and distance, presence and absence.</p>
+</section>
+
+<section class="collection" id="collection">
+  <div class="section-head reveal"><h2 class="section-title">Three fragrances.<br><em>Three states of night.</em></h2><span class="mono">02 — COLLECTION</span></div>
+  <div class="products">
+    <article class="product reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1300&q=88" alt="After Dark fragrance bottle"></div><div class="product-info"><div><div class="number">01 / 03</div><h3 class="product-name">After <em>Dark</em></h3><div class="notes"><span>Black Pepper</span><span>Iris</span><span>Cedar</span></div></div><div class="product-bottom"><span class="price">$185 / 50ML</span><a class="discover" href="#">DISCOVER →</a></div></div></article>
+    <article class="product reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=1300&q=88" alt="Velvet Static fragrance bottle"></div><div class="product-info"><div><div class="number">02 / 03</div><h3 class="product-name">Velvet <em>Static</em></h3><div class="notes"><span>Saffron</span><span>Suede</span><span>Amber</span></div></div><div class="product-bottom"><span class="price">$195 / 50ML</span><a class="discover" href="#">DISCOVER →</a></div></div></article>
+    <article class="product reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1300&q=88" alt="Silent Fig fragrance bottle"></div><div class="product-info"><div><div class="number">03 / 03</div><h3 class="product-name">Silent <em>Fig</em></h3><div class="notes"><span>Fig Leaf</span><span>Moss</span><span>Sandalwood</span></div></div><div class="product-bottom"><span class="price">$175 / 50ML</span><a class="discover" href="#">DISCOVER →</a></div></div></article>
+  </div>
+</section>
+
+<section class="scent">
+  <div class="scent-top reveal"><h2>What does<br><em>night</em> smell like?</h2><span class="mono">03 — SCENT MAP</span></div>
+  <div class="scent-map reveal"><div class="orbit"></div><span class="scent-word w1">SPICY</span><span class="scent-word w2">AMBER</span><span class="scent-word w3">GREEN</span><span class="scent-word w4">WOODY</span><span class="scent-word w5">SMOKY</span><span class="scent-word w6">MUSKY</span><div class="scent-center"><span>NOCTURNE</span><strong>the invisible architecture</strong></div></div>
+</section>
+
+<section class="cinema"><img id="cinemaImg" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=2200&q=88" alt=""><div class="cinema-copy reveal"><span>04 — THE RITUAL</span><h2>Made <em>after</em><br>dark.</h2></div></section>
+
+<section class="house" id="house">
+  <div class="house-grid"><div class="reveal"><div class="mono">05 — THE HOUSE</div><h2>We don't make<br>perfume for <em>everyone.</em></h2></div><div class="house-copy reveal"><p>NOCTURNE is an independent fragrance house built around contrast — light and shadow, warmth and distance, presence and absence.</p><p>Every composition is developed slowly, in small batches, with materials chosen for the atmosphere they leave behind.</p></div></div>
+  <div class="facts reveal"><div class="fact"><b>18</b><span>Years of collective experience</span></div><div class="fact"><b>42</b><span>Completed compositions</span></div><div class="fact"><b>07</b><span>Countries</span></div><div class="fact"><b>01</b><span>Independent house</span></div></div>
+</section>
+
+<section class="ingredients">
+  <div class="section-head reveal"><h2 class="section-title">The raw<br><em>materials.</em></h2><span class="mono">06 — INGREDIENTS</span></div>
+  <div class="ingredient-list">
+    <div class="ingredient reveal">Black Pepper <small>01</small></div><div class="ingredient reveal">Iris <small>02</small></div><div class="ingredient reveal">Cedar <small>03</small></div><div class="ingredient reveal">Saffron <small>04</small></div><div class="ingredient reveal">Suede <small>05</small></div><div class="ingredient reveal">Amber <small>06</small></div><div class="ingredient reveal">Fig Leaf <small>07</small></div><div class="ingredient reveal">Moss <small>08</small></div><div class="ingredient reveal">Sandalwood <small>09</small></div>
+  </div>
+</section>
+
+<section class="journal" id="journal">
+  <div class="section-head reveal"><h2 class="section-title">The<br><em>journal.</em></h2><span class="mono">07 — STORIES</span></div>
+  <div class="journal-grid">
+    <article class="journal-main reveal"><img src="https://images.unsplash.com/photo-1523293188086-b2c8c9b0f6d8?auto=format&fit=crop&w=1300&q=85" alt="Perfume editorial"><div class="mono">01 / FIELD NOTE</div><h3>The Art of Distance</h3><p>Why some fragrances should be discovered slowly — and why the most memorable ones rarely announce themselves.</p></article>
+    <div class="journal-side"><article class="journal-item reveal"><img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=85" alt="Glass and fragrance"><div class="mono">02 / MATERIAL</div><h3>Inside the Bottle</h3><p>Material, glass and the architecture of scent.</p></article><article class="journal-item reveal"><img src="https://images.unsplash.com/photo-1592945403407-9b8fb1f1b8b5?auto=format&fit=crop&w=900&q=85" alt="Night editorial"><div class="mono">03 / MEMORY</div><h3>After Midnight</h3><p>A study of fragrance, memory and the hours we keep for ourselves.</p></article></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="reveal"><div class="mono">08 — BEGIN</div><h2>Find your<br><em>night.</em></h2></div>
+  <div class="final-row"><a class="pill" href="#collection">Explore Nocturne</a><div class="footer-links"><a href="#collection">Collection</a><a href="#house">The House</a><a href="#journal">Journal</a><a href="mailto:hello@nocturne.fragrance">Contact</a></div><span class="copyright">© 2026 NOCTURNE</span></div>
+</section>
+</main>
+
+<script>
+const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cursor=document.getElementById('cursor');
+if(!reduce && cursor){window.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});document.querySelectorAll('a,button,.scent-word,.product').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('big'));el.addEventListener('mouseleave',()=>cursor.classList.remove('big'))})}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+if(!reduce){
+ const hero=document.getElementById('heroBg'), cinema=document.getElementById('cinemaImg');
+ window.addEventListener('scroll',()=>{const y=window.scrollY; if(hero)y<innerHeight*1.2&&(hero.style.transform='scale(1.08) translateY('+(y*.045)+'px)'); if(cinema){const r=cinema.parentElement.getBoundingClientRect();cinema.style.transform='scale(1.08) translateY('+(Math.max(-40,Math.min(40,-r.top*.035)))+'px)'}} ,{passive:true});
+}
+document.querySelectorAll('.discover').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();a.textContent='ADDED ✓';setTimeout(()=>a.textContent='DISCOVER →',1200)}));
+</script>
+</body>
+</html>
